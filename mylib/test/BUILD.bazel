@@ -1,0 +1,12 @@
+cc_test(
+    name = "mylib_test",
+    srcs = [
+        "test.cpp"
+    ],
+    deps = [
+        "//mylib:mylib",
+    ],
+    dynamic_deps = [
+        "//common:boost_test_main",
+    ],
+)

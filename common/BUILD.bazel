@@ -1,0 +1,11 @@
+cc_shared_library(
+    name = "boost_test_main",
+    visibility = ["//visibility:public"],
+    deps = [
+        "@boost//:test.a",
+    ],
+    exports_filter = [
+        "@@boost//:exception",
+        "@@boost//:system",
+    ],
+)

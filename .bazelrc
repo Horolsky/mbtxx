@@ -1,0 +1,2 @@
+common --noenable_bzlmod
+test --verbose_test_summary --verbose_failures --test_verbose_timeout_warnings

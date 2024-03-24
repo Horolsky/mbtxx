@@ -1,0 +1,6 @@
+# Application target
+cc_binary(
+    name = "myapp",
+    srcs = ["main.cpp"],
+    deps = ["//mylib:mylib"],
+)

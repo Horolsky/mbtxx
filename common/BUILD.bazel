@@ -5,7 +5,8 @@ cc_shared_library(
         "@boost//:test.a",
     ],
     exports_filter = [
-        "@@boost//:exception",
-        "@@boost//:system",
+        "@boost//:exception",
+        "@boost//:system",
     ],
 )
+

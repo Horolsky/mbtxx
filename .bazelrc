@@ -1,2 +1,4 @@
-common --noenable_bzlmod
-test --verbose_test_summary --verbose_failures --test_verbose_timeout_warnings
+common --noenable_bzlmod --verbose_failures
+test --verbose_test_summary --test_verbose_timeout_warnings
+build --action_env=BAZEL_CXXOPTS="-std=c++17"
+

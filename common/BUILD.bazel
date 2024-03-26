@@ -7,6 +7,8 @@ cc_shared_library(
     exports_filter = [
         "@boost//:exception",
         "@boost//:system",
+        "@boost//:chrono",
+        "@boost//:regex",
     ],
 )
 

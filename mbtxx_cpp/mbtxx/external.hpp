@@ -11,12 +11,15 @@
 
 #include <boost/json.hpp>
 #include <boost/mp11.hpp>
+#include <boost/program_options.hpp>
 
 #include <sol/sol.hpp>
 
 
 namespace mbtxx {
 using namespace boost;
+namespace js = boost::json;
+namespace po = boost::program_options;
 }
 
 #endif // MBTXX_EXTERNAL_HPP

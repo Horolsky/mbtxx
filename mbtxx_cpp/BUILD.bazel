@@ -14,6 +14,11 @@ cc_library(
     ],
     deps = [
         "@boost//:json",
+        "@boost//:program_options",
+        "@boost//:exception",
+        "@boost//:system",
+        "@boost//:chrono",
+        "@boost//:regex",
         "@lua//:lua",
         "@sol//:sol",
     ],

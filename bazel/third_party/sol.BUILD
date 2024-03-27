@@ -11,7 +11,6 @@ cc_library(
     "@sol2_cfg//file",
   ],
   visibility = ["//visibility:public"],
-  linkstatic = True,
   strip_include_prefix = "/file",
   include_prefix = "sol",
 )

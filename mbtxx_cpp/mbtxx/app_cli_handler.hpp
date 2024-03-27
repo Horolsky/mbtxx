@@ -76,6 +76,11 @@ class CliHandler
             << options_ << "\n";
     }
 
+    std::string const& exec_path() const
+    {
+        return exec_path_;
+    }
+
     std::vector<std::string> const& inputs() const
     {
         return inputs_;

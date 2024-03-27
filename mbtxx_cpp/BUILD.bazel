@@ -19,6 +19,7 @@ cc_library(
         "@boost//:system",
         "@boost//:chrono",
         "@boost//:regex",
+        "@boost//:format",
         "@lua//:lua",
         "@sol//:sol",
     ],

@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/mbtxx_cpp/",
+                "${workspaceFolder}/bazel-mbtxx/external/boost/libs/mp11/include/",
+                "${workspaceFolder}/bazel-mbtxx/external/boost/libs/json/include/",
+                "${workspaceFolder}/bazel-mbtxx/external/boost/libs/describe/include/",
+                "${workspaceFolder}/bazel-mbtxx/external/boost/libs/program_options/include/",
+
+                "${workspaceFolder}/bazel-mbtxx/external/lua/src/",
+                "${workspaceFolder}/bazel-mbtxx/bazel-out/k8-fastbuild/bin/external/sol/_virtual_includes/sol"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

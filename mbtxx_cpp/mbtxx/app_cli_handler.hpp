@@ -21,9 +21,10 @@ namespace mbtxx::app {
 
 class CliHandler
 {
-    static constexpr char* kInputKey{"input"};
+    static constexpr char* kInputKey{"script"};
     static constexpr char* kHelpKey{"help"};
-    static constexpr char* kSomeOptionKey{"some-option"};
+    static constexpr char* kTagsKey{"tags"};
+    static constexpr char* kLibKey{"lib-path"};
 
     std::string exec_path_ {};
     po::variables_map varmap_ {};
@@ -37,7 +38,8 @@ class CliHandler
         po::options_description options("Options");
         options.add_options()
             (kHelpKey, "print help message")
-            (kSomeOptionKey, po::value<int>(), "set some option")
+            (kLibKey, po::value<std::string>(), "lib")
+            (kTagsKey, po::value<std::string>(), "tags")
             (kInputKey, po::value(&store_in), "list of files")
         ;
 
@@ -84,6 +86,26 @@ class CliHandler
     std::vector<std::string> const& inputs() const
     {
         return inputs_;
+    }
+
+    std::string tags() const
+    {
+        if (varmap_.count(kTagsKey))
+        {
+            return varmap_[kTagsKey].as<std::string>();
+        }
+
+        return {""};
+    }
+
+    std::string lib_path() const
+    {
+        if (varmap_.count(kLibKey))
+        {
+            return varmap_[kLibKey].as<std::string>();
+        }
+
+        return {""};
     }
 };
 

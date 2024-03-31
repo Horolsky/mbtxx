@@ -5,10 +5,11 @@ cc_shared_library(
         "@boost//:test.a",
     ],
     exports_filter = [
-        "@boost//:exception",
-        "@boost//:system",
         "@boost//:chrono",
+        "@boost//:exception",
         "@boost//:regex",
+        "@boost//:system",
+        "@boost//:timer",
     ],
 )
 

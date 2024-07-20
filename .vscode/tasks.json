@@ -13,5 +13,15 @@
                 "//mbtxx_cpp/test:mbt_test"
             ]
         },
+        {
+            "label": "build mbtxx_cpp/demo/demo",
+            "type": "shell",
+            "command": "bazel",
+            "args": [
+                "build",
+                "-c", "dbg",
+                "//mbtxx_cpp/demo:demo"
+            ]
+        },
     ]
 }

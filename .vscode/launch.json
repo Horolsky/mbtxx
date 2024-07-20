@@ -22,6 +22,27 @@
                 }
             },
             "preLaunchTask": "build mbtxx_cpp/test/mbt_test"
+        },
+        {
+            "name": "mbtxx_cpp/demo/demo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bazel-bin/mbtxx_cpp/demo/demo",
+            "args": [
+                "${workspaceFolder}/mbtxx_cpp/demo/test.lua"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "linux": {
+                "sourceFileMap": {
+                   "/proc/self/cwd": "${workspaceFolder}",
+                }
+            },
+            "preLaunchTask": "build mbtxx_cpp/demo/demo"
         }
     ]
 }

@@ -9,6 +9,8 @@
 #ifndef MBTXX_EXTERNAL_HPP
 #define MBTXX_EXTERNAL_HPP
 
+
+#include <boost/format.hpp>
 #include <boost/json.hpp>
 #include <boost/mp11.hpp>
 #include <boost/program_options.hpp>
